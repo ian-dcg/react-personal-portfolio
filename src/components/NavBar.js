@@ -6,19 +6,19 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
-  const [scrooled, setScrooled] = useState(false);
+  const [scrolled, setscrolled] = useState(false);
 
   useEffect(() => {
-    const onScrooll = () => {
+    const onScroll = () => {
       if(window.scrollY > 50) {
-        setScrooled(true);
+        setscrolled(true);
       } else {
-        setScrooled(false);
+        setscrolled(false);
       }
 
-      window.addEventListener('scroll', onScrooll);
+      window.addEventListener('scroll', onScroll);
 
-      return () => window.removeEventListener('scroll', onScrooll); 
+      return () => window.removeEventListener('scroll', onScroll); 
 
     }
   }, [])
