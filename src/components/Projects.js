@@ -3,8 +3,8 @@ import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
-import { Col, Container, Nav, Row, TabContent, TabPane } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
+import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 
 export const Projects = () => {
   const projects = [
@@ -39,6 +39,7 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
   ];
+
   return (
     <section className='project' id='project'>
       <Container>
@@ -46,15 +47,19 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              accusantium? Asperiores in similique est possimus animi nihil
-              mollitia, hic amet ratione eius a illum quis optio accusamus nemo
-              obcaecati ullam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga
+              voluptatem voluptatum modi, aut quam nisi quos expedita ipsum
+              accusantium porro explicabo maiores odio architecto minima error.
+              Quidem, ipsa optio!
             </p>
-            <Nav.Container id='projects-tabs' defaultActiveKey='first'>
-              <Nav variant='pills' defaultActiveKey='/home'>
+            <Tab.Container id='projects-tabs' defaultActiveKey='first'>
+              <Nav
+                variant='pills'
+                className='nav-pills mb-5 justify-content-center align-items-center'
+                id='pills-tab'
+              >
                 <Nav.Item>
-                  <Nav.Link eventKey='fist'>Tab One</Nav.Link>
+                  <Nav.Link eventKey='first'>Tab One</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey='second'>Tab Two</Nav.Link>
@@ -63,22 +68,22 @@ export const Projects = () => {
                   <Nav.Link eventKey='third'>Tab Three</Nav.Link>
                 </Nav.Item>
               </Nav>
-              <TabContent>
-                <TabPane eventKey='first'>
+              <Tab.Content>
+                <Tab.Pane eventKey='first'>
                   <Row>
-                    {projects.map((projects, index) => {
-                      return <ProjectCard key={index} {...projects} />;
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
-                </TabPane>
-                <TabPane eventKey='second'>lorem ipsum</TabPane>
-                <TabPane eventKey='third'>lorem ipsum</TabPane>
-              </TabContent>
-            </Nav.Container>
+                </Tab.Pane>
+                <Tab.Pane eventKey='second'>Loren Ipsum</Tab.Pane>
+                <Tab.Pane eventKey='third'>Loren Ipsum</Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
       </Container>
-      <img src={colorSharp2} alt='' className='background-image-right' />
+      <img className='background-image-right' src={colorSharp2} alt='' />
     </section>
   );
 };
