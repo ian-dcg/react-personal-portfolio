@@ -1,7 +1,7 @@
 ## Personal Portfolio
 
 
-Personal Portfolio developed using React Js. 
+Personal Portfolio example developed using React Js. 
 
 
 ## Screenshots
