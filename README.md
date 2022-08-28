@@ -42,5 +42,3 @@ Enter port:
 `localhost:3000`  
 
 
-
-#### Note: you can just simply acess the website through 
