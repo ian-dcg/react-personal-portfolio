@@ -10,13 +10,17 @@ Personal Portfolio developed using React Js.
 
 <img src="/public/portimg1.png">
 
-#### Cards: 
+#### Skills: 
 
 <img src="/public/portimg2.png">
 
-### Footer:
+### Projects:
 
-<img src="/public/imag3.png">
+<img src="/public/portimg3.png">
+
+### Contact and Newsletter:
+
+<img src="/public/portimg4.png">
 
 
 ## Installation and Setup
