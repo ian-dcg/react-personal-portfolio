@@ -6,11 +6,11 @@ Personal Portfolio developed using React Js.
 
 ## Screenshots
 
-#### Navbar/Home:   
+### Navbar/Home:   
 
 <img src="/public/portimg1.png">
 
-#### Skills: 
+### Skills: 
 
 <img src="/public/portimg2.png">
 
